@@ -33,13 +33,8 @@ body {
 	background: linear-gradient(top, #ffffff 0%,#f3f3f3 100%);
 	
 	border-radius:20px;
-<<<<<<< HEAD
     box-shadow: #1A1A1A 1px 1px 20px;
-=======
-    box-shadow: #1A1A1A 2px 2px 25px;
->>>>>>> 9d97464be55ae8d440e0bdb377136eb21323ac96
 	
-    
 	transform:translateX(-600px);
 	-webkit-transform:translateX(-600px);
 	-moz-transform:translateX(-600px);

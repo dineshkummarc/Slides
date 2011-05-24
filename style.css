@@ -1,0 +1,83 @@
+body {
+	background-color:#BFBFBF;
+	background: -moz-linear-gradient(top, #BFBFBF 0%, #999 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#BFBFBF), color-stop(100%,#999)); 
+	background: -webkit-linear-gradient(top, #BFBFBF 0%,#999 100%);
+	background: -o-linear-gradient(top, #BFBFBF 0%,#999 100%); 
+	background: -ms-linear-gradient(top, #BFBFBF 0%,#999 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#BFBFBF', endColorstr='#999',GradientType=0 );
+	background: linear-gradient(top, #BFBFBF 0%,#999 100%);
+}
+#container {
+	position:absolute;
+	top:20px;
+	width:600px;
+	height:600px;
+	overflow:hidden;
+}
+
+.slide {
+	width:550px;
+	height:550px;
+	position:relative;
+	left:25px;
+	top:25px;
+	
+	background-color:#F3F3F3;
+	background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f3f3f3)); 
+	background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3f3 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#f3f3f3 100%); 
+	background: -ms-linear-gradient(top, #ffffff 0%,#f3f3f3 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#F3F3F3',GradientType=0 );
+	background: linear-gradient(top, #ffffff 0%,#f3f3f3 100%);
+	
+	border-radius:20px;
+	
+	transform:translateX(-600px);
+	-webkit-transform:translateX(-600px);
+	-moz-transform:translateX(-600px);
+	-khtml-transform:translateX(-600px);
+	-ms-transform:translateX(-600px);
+	-o-transform:translateX(-600px);
+	
+	
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+	-khtml-transition:all 1s;
+	-ms-transition:all 1s;
+	transition:all 1s;
+}
+
+.slide.current {
+	transform:translateX(0);
+	-webkit-transform:translateX(0);
+	-moz-transform:translateX(0);
+	-khtml-transform:translateX(0);
+	-ms-transform:translateX(0);
+	-o-transform:translateX(0);
+	
+}
+
+.slide.past {
+	-webkit-transform:translateX(600px);
+	-moz-transform:translateX(600px);
+	-o-transform:translateX(600px);
+	-khtml-transform:translateX(600px);
+	-ms-transform:translateX(600px);
+	transform:translateX(600px);
+
+}
+
+/*---Slide Styleing---*/
+
+.slide[slide="0"] h1{
+	text-align:center;
+	font-size:80px;
+	font-family:Helvetica,sans-serif;
+	position:relative;
+	top:229px;
+	margin:0;
+}
+

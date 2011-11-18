@@ -1,5 +1,6 @@
+var active = false;
 
-$(document.body).keyup(function(e){
+$(document).keyup(function(e){
 	if(e.keyCode == "39"){
 		var slide = document.querySelector(".current");
 		var next = parseInt(document.querySelector(".current").getAttribute("slide"))+1;
@@ -9,11 +10,14 @@ $(document.body).keyup(function(e){
 			}
 			next = 0;*/
 			return false;
+		} else if(active == false){
+			var next_slide = $(".slide")[next];
+			slide.className = "slide past";
+			next_slide.setAttribute("slide",parseInt(next));
+			next_slide.className = "slide current";
+			active = true;
+			setEvent(next_slide);		
 		}
-		var next_slide = $(".slide")[next];
-		slide.className = "slide past";
-		next_slide.setAttribute("slide",parseInt(next));
-		next_slide.className = "slide current";
 	}
 	if(e.keyCode == "37"){
 		var slide = document.querySelector(".current");
@@ -24,12 +28,25 @@ $(document.body).keyup(function(e){
 			}
 			past = $(".slide").length-1;*/
 			return false;
+		} else if(active == false){
+			var previous_slide = $(".slide")[past];
+			slide.className = "slide";
+			previous_slide.setAttribute("slide",parseInt(past));
+			previous_slide.className = "slide current";
+			active = true;
+			setEvent(previous_slide);	
 		}
-		var previous_slide = $(".slide")[past];
-		slide.className = "slide";
-		previous_slide.setAttribute("slide",parseInt(past));
-		previous_slide.className = "slide current";
 	}
 });
-	
 
+function setEvent(slide){
+	slide.addEventListener("webkitTransitionEnd",function(){
+		active = false;
+	},false);
+	slide.addEventListener("transitionend",function(){
+		active = false;
+	},false);
+	slide.addEventListener("oTransitionEnd",function(){
+		active = false;
+	},false);
+}

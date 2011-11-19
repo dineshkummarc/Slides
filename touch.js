@@ -1,19 +1,17 @@
 var startX;
 document.addEventListener("touchstart",function(event){
 	event.preventDefault();
-	if(event.target.id == "container" && event.touches.length < 2){
+	if(event.touches.length < 2 && !!event.touches[0].target.className.match("current")){
 		startX = event.touches[0].pageX;
-		console.log(startX);
 	}
 },false);
 
 document.addEventListener("touchmove",function(event){
 	event.preventDefault();
-	if(event.target.id == "container" && event.touches.length < 2){
-		//console.log((startX - event.touches[0].pageX))
-		if((startX - event.touches[0].pageX) > 100){
+	if(event.touches.length < 2 && !!event.touches[0].target.className.match("current")){
+		if((startX - event.touches[0].pageX) > 50){
 			previousSlide();
-		} else if((startX - event.touches[0].pageX) < -100){
+		} else if((startX - event.touches[0].pageX) < -50){
 			nextSlide();
 		}
 	}

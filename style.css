@@ -21,7 +21,7 @@ body {
 .slide {
 	width: 550px;
 	height: 550px;
-	position: relative;
+	position: absolute;
 	left: 25px;
 	top: 25px;
 	background-color: #F3F3F3;

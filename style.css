@@ -1,12 +1,12 @@
 body {
 	background-color: #BFBFBF;
-	height:100%;
+	height: 100%;
 
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #BFBFBF), color-stop(100%, #999));
-	background: -webkit-linear-gradient(top, #BFBFBF 0%, #999 100%);
-	background: -moz-linear-gradient(top, #BFBFBF 0%, #999 100%);
-	background: -o-linear-gradient(top, #BFBFBF 0%, #999 100%);
-	background: -ms-linear-gradient(top, #BFBFBF 0%, #999 100%);
+	background-image: -webkit-linear-gradient(top, #BFBFBF 0%, #999 100%);
+	background-image: -moz-linear-gradient(top, #BFBFBF 0%, #999 100%);
+	background-image: -o-linear-gradient(top, #BFBFBF 0%, #999 100%);
+	background-image: -ms-linear-gradient(top, #BFBFBF 0%, #999 100%);
 	background: linear-gradient(top, #BFBFBF 0%, #999 100%);
 }
 
@@ -27,10 +27,10 @@ body {
 	background-color: #F3F3F3;
 
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f3f3f3));
-	background: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
-	background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
-	background: -o-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
-	background: -ms-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+	background-image: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+	background-image: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+	background-image: -o-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+	background-image: -ms-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
 	background: linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
 
 	-webkit-border-radius: 20px;
@@ -52,7 +52,6 @@ body {
 	-o-transition: all .75s;
 	-ms-transition: all .75s;
 	transition: all .75s;
-	
 }
 
 .slide.current {

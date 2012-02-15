@@ -14,6 +14,8 @@ body {
 #slides {
 	position: absolute;
 	top: 20px;
+	left:50%;
+	margin-left:-300px;
 	width: 600px;
 	height: 600px;
 	overflow: hidden;
@@ -42,17 +44,17 @@ body {
 	-moz-box-shadow: #1A1A1A 1px 1px 10px;
 	box-shadow: #1A1A1A 1px 1px 10px;
 
-	-webkit-transform: translateX(600px);
-	-moz-transform: translateX(600px);
-	-o-transform: translateX(600px);
-	-ms-transform: translateX(600px);
-	transform: translateX(600px);
-
 	-webkit-transition: all .75s;
 	-moz-transition: all .75s;
 	-o-transition: all .75s;
 	-ms-transition: all .75s;
 	transition: all .75s;
+
+	-webkit-transform: translateX(600px);
+	-moz-transform: translateX(600px);
+	-o-transform: translateX(600px);
+	-ms-transform: translateX(600px);
+	transform: translateX(600px);
 }
 
 #slides > div.current {

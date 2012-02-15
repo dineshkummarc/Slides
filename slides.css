@@ -1,0 +1,90 @@
+body {
+	background-color: #BFBFBF;
+	height: 100%;
+	margin: 0px;
+	
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #BFBFBF), color-stop(100%, #999));
+	background-image: -webkit-linear-gradient(top, #BFBFBF 0%, #999 100%);
+	background-image: -moz-linear-gradient(top, #BFBFBF 0%, #999 100%);
+	background-image: -o-linear-gradient(top, #BFBFBF 0%, #999 100%);
+	background-image: -ms-linear-gradient(top, #BFBFBF 0%, #999 100%);
+	background-image: linear-gradient(top, #BFBFBF 0%, #999 100%);
+}
+
+#slides {
+	position: absolute;
+	top: 20px;
+	width: 600px;
+	height: 600px;
+	overflow: hidden;
+}
+
+#slides > div {
+	width: 550px;
+	height: 550px;
+	position: absolute;
+	left: 25px;
+	top: 25px;
+	background-color: #F3F3F3;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f3f3f3));
+
+	background-image: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+	background-image: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+	background-image: -o-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+	background-image: -ms-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+	background-image: linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+
+	-image -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+	-webkit-box-shadow: #1A1A1A 1px 1px 10px;
+	-moz-box-shadow: #1A1A1A 1px 1px 10px;
+	box-shadow: #1A1A1A 1px 1px 10px;
+
+	-webkit-transform: translateX(600px);
+	-moz-transform: translateX(600px);
+	-o-transform: translateX(600px);
+	-ms-transform: translateX(600px);
+	transform: translateX(600px);
+
+	-webkit-transition: all .75s;
+	-moz-transition: all .75s;
+	-o-transition: all .75s;
+	-ms-transition: all .75s;
+	transition: all .75s;
+}
+
+#slides > div.current {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-o-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+#slides > div.past {
+	-webkit-transform: translateX(-600px);
+	-moz-transform: translateX(-600px);
+	-o-transform: translateX(-600px);
+	-ms-transform: translateX(-600px);
+	transform: translateX(-600px);
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.slide {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}	
+}
+
+/*---Slide Styleing---*/
+#slide1 h1 {
+	text-align: center;
+	font-size: 80px;
+	font-family: Helvetica,sans-serif;
+	position: relative;
+	top: 229px;
+	margin: 0;
+}
+

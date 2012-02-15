@@ -1,13 +1,14 @@
 body {
 	background-color: #BFBFBF;
 	height: 100%;
-
+	margin: 0px;
+	
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #BFBFBF), color-stop(100%, #999));
 	background-image: -webkit-linear-gradient(top, #BFBFBF 0%, #999 100%);
 	background-image: -moz-linear-gradient(top, #BFBFBF 0%, #999 100%);
 	background-image: -o-linear-gradient(top, #BFBFBF 0%, #999 100%);
 	background-image: -ms-linear-gradient(top, #BFBFBF 0%, #999 100%);
-	background: linear-gradient(top, #BFBFBF 0%, #999 100%);
+	background-image: linear-gradient(top, #BFBFBF 0%, #999 100%);
 }
 
 #container {
@@ -25,15 +26,15 @@ body {
 	left: 25px;
 	top: 25px;
 	background-color: #F3F3F3;
-
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f3f3f3));
+
 	background-image: -webkit-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
 	background-image: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
 	background-image: -o-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
 	background-image: -ms-linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
-	background: linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
+	background-image: linear-gradient(top, #ffffff 0%, #f3f3f3 100%);
 
-	-webkit-border-radius: 20px;
+	-image -webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 
@@ -41,11 +42,11 @@ body {
 	-moz-box-shadow: #1A1A1A 1px 1px 10px;
 	box-shadow: #1A1A1A 1px 1px 10px;
 
-	-webkit-transform: translateX(-600px);
-	-moz-transform: translateX(-600px);
-	-o-transform: translateX(-600px);
-	-ms-transform: translateX(-600px);
-	transform: translateX(-600px);
+	-webkit-transform: translateX(600px);
+	-moz-transform: translateX(600px);
+	-o-transform: translateX(600px);
+	-ms-transform: translateX(600px);
+	transform: translateX(600px);
 
 	-webkit-transition: all .75s;
 	-moz-transition: all .75s;
@@ -63,11 +64,11 @@ body {
 }
 
 .slide.past {
-	-webkit-transform: translateX(600px);
-	-moz-transform: translateX(600px);
-	-o-transform: translateX(600px);
-	-ms-transform: translateX(600px);
-	transform: translateX(600px);
+	-webkit-transform: translateX(-600px);
+	-moz-transform: translateX(-600px);
+	-o-transform: translateX(-600px);
+	-ms-transform: translateX(-600px);
+	transform: translateX(-600px);
 }
 
 /*---Slide Styleing---*/

@@ -15,7 +15,8 @@ body {
 	position: absolute;
 	top: 20px;
 	left:50%;
-	margin-left:-325px;
+	top:50%;
+	margin:-325px 0px 0px -325px;
 	width: 650px;
 	height: 650px;
 	overflow: hidden;
@@ -73,11 +74,23 @@ body {
 	transform: translateX(-650px);
 }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-	.slide {
+	#slides {
+		width:700px;
+		height:700px;
+		margin:-350px 0px 0px -350px;
+		
+	}
+	#slides > div {
+		width:650px;
+		height:650px;
+		-webkit-user-select:none;
 		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none;
+
+		-webkit-transform: translateX(700px);
 	}	
+	#slides > div.past {
+		-webkit-transform: translateX(-700px);
+	}
 }
 
 /* --- Style Adjusments --- */

@@ -1,9 +1,4 @@
-/* Slide 1 */
+/* You can style your slides individually by using the IDs asigned to them: #slide1, #slide2, #slide3... */
 #slide1 h1 {
-	text-align: center;
-	font-size: 80px;
-	font-family: Helvetica,sans-serif;
-	position: relative;
-	top: 229px;
-	margin: 0;
+
 }

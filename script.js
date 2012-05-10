@@ -11,15 +11,15 @@ document.addEventListener("keyup",function(e){
 
 function nextSlide(){
 	var slide = document.querySelector(".current"),
-		slides = document.querySelectorAll(".slide");
-		next = parseInt(document.querySelector(".current").getAttribute("slide"))+1;
+		slides = document.querySelectorAll(".slide"),
+		next = parseInt(document.querySelector(".current").getAttribute("slide"),10)+1;
 
 	if(next == slides.length){
 		return false;
-	} else if(active == false){
+	} else if(active === false){
 		var next_slide = slides[next];
 		slide.className = "slide past";
-		next_slide.setAttribute("slide",parseInt(next));
+		next_slide.setAttribute("slide",parseInt(next,10));
 		next_slide.className = "slide current";
 		active = true;
 		setEvent(next_slide);		
@@ -28,14 +28,14 @@ function nextSlide(){
 function previousSlide(){
 	var slide = document.querySelector(".current"),
 		slides = document.querySelectorAll(".slide"),
-		past = parseInt(document.querySelector(".current").getAttribute("slide"))-1;
+		past = parseInt(document.querySelector(".current").getAttribute("slide"),10)-1;
 	
 	if(past < 0){
 		return false;
-	} else if(active == false){
+	} else if(active === false){
 		var previous_slide = slides[past];
 		slide.className = "slide";
-		previous_slide.setAttribute("slide",parseInt(past));
+		previous_slide.setAttribute("slide",parseInt(past,10));
 		previous_slide.className = "slide current";
 		active = true;
 		setEvent(previous_slide);	

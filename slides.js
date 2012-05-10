@@ -62,6 +62,9 @@ function setEvent(slide){
 	slide.addEventListener("oTransitionEnd",function(){
 		active = false;
 	},false);
+    slide.addEventListener("MSTransitionEnd",function(){
+        active = false;
+    },false);	
 }
 
 /* --- Events for Touch Devices --- */
